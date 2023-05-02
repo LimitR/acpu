@@ -13,8 +13,8 @@ go run cmd/main.go
 
 ## 3. Specify the seats that are occupied and press button
 ![Added checkbox](.github/2.png)
-- Left -> Tab
-- Right -> Shift + Tab
+- Right -> Tab
+- Left -> Shift + Tab
 
 ## 4. Check result and happy pee
 ![Result](.github/3.png)
