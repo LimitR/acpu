@@ -18,3 +18,5 @@ go run cmd/main.go
 
 ## 4. Check result and happy pee
 ![Result](.github/3.png)
+
+Press some button for restart or press CTRL + Q for quit
