@@ -2,7 +2,6 @@ package cache
 
 import (
 	"errors"
-	"fmt"
 	"sync"
 	"time"
 
@@ -36,7 +35,6 @@ func (c *Cache[T, V]) CheckTime() error {
 		return errors.New("Not found element")
 	}
 	if time.Now().Local().UnixMilli()-element.Time > c.timeout.Milliseconds() {
-		fmt.Println("DELETE")
 		delete(c.cache, c.queue.Pop())
 		return nil
 	}

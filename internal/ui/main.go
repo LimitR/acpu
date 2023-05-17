@@ -120,7 +120,7 @@ func RunUI() {
 		}
 		return event
 	})
-	if err := app.SetRoot(box, true).SetFocus(box).Run(); err != nil {
+	if err := app.SetRoot(box, true).EnableMouse(true).SetFocus(box).Run(); err != nil {
 		panic(err)
 	}
 }

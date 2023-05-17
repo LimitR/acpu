@@ -9,7 +9,7 @@ type Queue[T comparable] struct {
 
 func NewQueue[T comparable](size int) *Queue[T] {
 	return &Queue[T]{
-		array: make([]T, size),
+		array: make([]T, 0, size),
 	}
 }
 
